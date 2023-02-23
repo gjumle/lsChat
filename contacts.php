@@ -1,4 +1,20 @@
 <?php
+// Define database connection variables
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "lastSeen";
+
+// Create a connection to the database
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check if the connection was successful
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Set the character set to UTF-8 to support special characters
+$conn->set_charset("utf8");
 // Start the session and check if the user is logged in
 session_start();
 if (!isset($_SESSION['user_id'])) {
@@ -19,6 +35,16 @@ $contacts = mysqli_fetch_all($result, MYSQLI_ASSOC);
     <title>Contacts</title>
 </head>
 <body>
+<nav>
+  <ul>
+    <li><a href="index.php">Home</a></li>
+    <li><a href="contacts.php">Contacts</a></li>
+    <li><a href="schedule.php">Schedule</a></li>
+    <li><a href="statistics.php">Statistics</a></li>
+    <li><a href="logout.php">Logout</a></li>
+  </ul>
+</nav>
+
 <!-- Display the user's contacts -->
 <h1>Contacts</h1>
 <ul>

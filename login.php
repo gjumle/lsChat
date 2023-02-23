@@ -4,6 +4,16 @@
     <title>Login</title>
 </head>
 <body>
+<nav>
+  <ul>
+    <li><a href="index.php">Home</a></li>
+    <li><a href="contacts.php">Contacts</a></li>
+    <li><a href="schedule.php">Schedule</a></li>
+    <li><a href="statistics.php">Statistics</a></li>
+    <li><a href="logout.php">Logout</a></li>
+  </ul>
+</nav>
+
     <form action="login.php" method="POST">
         <input type="text" name="username" placeholder="Username">
         <input type="password" name="password" placeholder="Password">
