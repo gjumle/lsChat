@@ -62,16 +62,21 @@ $contacts = mysqli_fetch_all($result, MYSQLI_ASSOC);
     </ul>
   </div>
 </nav>
-<!-- Display the user's contacts -->
+<!-- HTML code for contacts list -->
 <h1>Contacts</h1>
-<ul>
+<ul class="contact-list">
+<button id="add-contact-button">Add Contact</button>
   <?php foreach ($contacts as $contact) { ?>
-    <li>
+    <li class="contact-item">
       <?php echo $contact['name']; ?> 
-      <a href="edit_contact.php?id=<?php echo $contact['id']; ?>">Edit</a>
-      <a href="delete_contact.php?id=<?php echo $contact['id']; ?>">Delete</a>
+      <div class="contact-actions">
+        <a class="edit-link" href="edit_contact.php?id=<?php echo $contact['id']; ?>">Edit</a>
+        <a class="delete-link" href="delete_contact.php?id=<?php echo $contact['id']; ?>">Delete</a>
+      </div>
+      
     </li>
   <?php } ?>
 </ul>
+
 </body>
 </html>

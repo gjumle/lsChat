@@ -7,7 +7,7 @@
 <body>
 <nav class="navbar">
   <div class="navbar-container">
-    <a href="#" class="logo">lastSeen</a>
+    <a href="index.php" class="logo">lastSeen</a>
     <ul class="navbar-menu">
       <li><a href="index.php">Home</a></li>
       <li><a href="contacts.php">Contacts</a></li>
