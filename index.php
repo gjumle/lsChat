@@ -7,15 +7,15 @@
 <body>
 <nav class="navbar">
   <div class="navbar-container">
-    <a href="#" class="logo">My App</a>
+    <a href="#" class="logo">lastSeen</a>
     <ul class="navbar-menu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Contacts</a></li>
-      <li><a href="#">Schedule</a></li>
-      <li><a href="#">Statistics</a></li>
+      <li><a href="index.php">Home</a></li>
+      <li><a href="contacts.php">Contacts</a></li>
+      <li><a href="schedule.php">Schedule</a></li>
+      <li><a href="stats.php">Statistics</a></li>
     </ul>
     <div class="navbar-right">
-      <a href="#">Logout</a>
+      <a href="logout.php">Logout</a>
     </div>
     <button class="navbar-toggle">
       <span class="navbar-toggle-icon"></span>
